@@ -33,7 +33,10 @@
             <label for="">E-mail:</label>
             <input type="email" id="email">
             <label for="">Message:</label>
-            <textarea name="name" rows="8" cols="80" id="descricao"></textarea>
+            <textarea name="name" rows="8" cols="80" id="message"></textarea>
+            <div id="erros">
+
+            </div>
             <div class="contact-item">
                 <input type="checkbox">
                 <label for="">Don't post my name</label>
@@ -58,16 +61,50 @@
         }
 
         document.querySelector("form").onsubmit = function() {
-            let erros = []
+            let erros = [];
 
             var nome = document.querySelector("#nome");
             var email = document.querySelector("#email");
-            var mensagem = document.querySelector("#descricao");
+            var message = document.querySelector("#message");
+            console.log(nome)
 
-
-            if (nome.value = null) {
-
+            if (nome.value.length === 0) {
+                erros.push({
+                    "elemento":"nome",
+                    "mensagem":"Campo nome precisa ser preenchido!"
+                }) 
             }
+            if (email.value.length === 0) {
+                erros.push({
+                    "elemento":"email",
+                    "mensagem":"Campo email precisa ser preenchido!"
+                }) 
+            }
+            if (message.value.length === 0) {
+                erros.push({
+                    "elemento":"message",
+                    "mensagem":"Campo message precisa ser preenchido!"
+                }) 
+            }
+            if(erros.length !== 0){
+                erros.forEach((erro)=>{
+                /* selecionando elemento*/
+                let elemento = document.getElementById(erro.elemento)
+
+                /* alterando estilo */
+                elemento.style.borderColor = "red";
+
+                /* criando elemento HTML*/
+                let p = document.createElement('p')
+                /* inserindo texto no elemento*/
+                p.innerHTML = erro.mensagem
+
+                /* inserindo elemento no body */
+                document.getElementById('erros').appendChild(p)
+
+                })
+            }
+
         }
 
 

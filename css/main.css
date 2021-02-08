@@ -72,6 +72,95 @@ header .container ul .toggle-menu {
 }
 
 /* -- Header Area End -- */
+
+/* -- Main Area Begin -- */
+#contanier-banner{
+  position: relative; 
+}
+#banner {
+  width: 100%;
+  margin-top: 61px; 
+}
+.texto-banner-1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.texto-banner-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.texto-banner-3 {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  height: 80px ;
+  
+}
+#btn-banner{
+  width: 120%;
+  height: 50%;
+  border-radius: 30px;
+ 
+  
+
+}
+.container-produtos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+.container-produto{
+  position: relative;
+}
+
+.produto{
+  width: 330px;
+  height: 220px;
+}
+
+.texto-banner-produto{
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  height: 80px ;
+}
+#btn-produto{
+  width: 120%;
+  height: 50%;
+  border-radius: 30px;
+}
+ 
+
+/* -- Main Area End -- */
+/* -- Footer Area Begin -- */
+
+footer{
+  height: 30px;
+  background-color: #6d267566;
+  color: #fff;
+  text-align:center;
+  border-top: 10px solid #c4a8c8;
+}
+/* -- Footer Area End -- */
+
 .contact-content {
   margin: 8% auto 4%;
   width: 40%;

@@ -1,37 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Template HTML5</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Template HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
+
 <body>
-    <header>
-      <div class="logo-content">
-        <img src="img/logo.png" alt="logo do site">
-        <span>Landseeker</span>
+  <header>
+    <div class="logo-content">
+      <img src="img/logo.png" alt="logo do site">
+      <span>Landseeker</span>
+    </div>
+    <div class="container">
+      <ul>
+        <li class="toggle-menu"><a href="#">&#9776;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div id="container-banner">
+      <img id="banner" src="img/banner.jpg" alt="banner do site">
+      <div class="texto-banner-1">The Most Beautfulls Landscapes</div>
+      <div class="texto-banner-2">NEW ORLEANS FOREST</div>
+      <div class="texto-banner-3"> <button id="btn-banner"> CHECK IT OUT </button></div>
+    </div>
+    <div class="container-produtos">
+
+      <div class="container-produto">
+        <img class="produto" src="img/product-1.png" alt="produto 1">
+        <div class="texto-banner-produto"> <button id="btn-produto"> SAIBA MAIS </button></div>
       </div>
-      <div class="container">
-        <ul>
-          <li class="toggle-menu"><a href="#">&#9776;</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+      <div class="container-produto">
+        <img class="produto" src="img/product-2.jpg" alt="produto 2">
+        <div class="texto-banner-produto"> <button id="btn-produto"> SAIBA MAIS </button></div>
       </div>
-    </header>
-    <script>
 
-      let header = document.querySelector('header');
-      header.style.backgroundColor = "#6d267566";
+      <div class="container-produto">
+        <img class="produto" src="img/product-3.jpg" alt="produto 3">
+         <div class="texto-banner-produto"> <button id="btn-produto"> SAIBA MAIS </button></div>
+      </div>
 
-      let linkHome = document.querySelectorAll("a");
-      console.log(linkHome[1]);
+    </div>
 
-      linkHome[1].setAttribute("href","https://www.google.com.br/")
+    <div class="container-produtos">
 
-    </script>
+      <div class="container-produto">
+        <img class="produto" src="img/product-4.jpg" alt="produto 4">
+        <div class="texto-banner-produto"> <button id="btn-produto"> SAIBA MAIS </button></div>
+      </div>
+
+      <div class="container-produto">
+        <img class="produto" src="img/product-5.jpg" alt="produto 5">
+        <div class="texto-banner-produto"> <button id="btn-produto"> SAIBA MAIS </button></div>
+      </div>
+
+      <div class="container-produto">
+        <img class="produto" src="img/product-6.jpg" alt="produto 6">
+         <div class="texto-banner-produto"> <button id="btn-produto"> SAIBA MAIS </button></div>
+      </div>
+    </div>
+  </main>
+  <script>
+
+    let header = document.querySelector('header');
+    header.style.backgroundColor = "#6d267566";
+
+    let linkHome = document.querySelectorAll("a");
+    console.log(linkHome[1]);
+
+    linkHome[1].setAttribute("href", "https://www.google.com.br/")
+
+  </script>
 </body>
+<footer>
+  Copyright
+</footer>
+
 </html>
